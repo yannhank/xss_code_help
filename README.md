@@ -10,4 +10,4 @@ git clone https://github.com/yannhank/xss_code_help.git
 
 然后点击转换后的代码复制内容
 
-<img width="1102" height="1176" alt="image" src="https://github.com/user-attachments/assets/990dde98-a8be-4637-bd19-6e4d4c892b94" />
+<img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/990dde98-a8be-4637-bd19-6e4d4c892b94" />
