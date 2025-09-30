@@ -1,0 +1,109 @@
+body {
+    width: 500px;
+    padding: 15px;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#inputStr {
+    height: 80px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: none;
+}
+
+#convertBtn {
+    padding: 8px 16px;
+    background: #0078d7;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#convertBtn:hover {
+    background: #005a9e;
+}
+
+.result-container {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.result-item {
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+}
+
+.result-item h4 {
+    margin: 0 0 5px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.result-item pre {
+    margin: 0;
+    padding: 5px;
+    background: #f9f9f9;
+    border-radius: 2px;
+    font-size: 13px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    user-select: none;
+}
+
+.result-item pre:hover {
+    background: #f0f0f0;
+}
+
+.result-item pre:active {
+    background: #e8f5e8;
+}
+
+/* 复制成功提示样式 */
+.copy-success-tip {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #4CAF50;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 12px;
+    z-index: 10000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeInOut 1.5s ease-in-out;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    20% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    80% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+}
